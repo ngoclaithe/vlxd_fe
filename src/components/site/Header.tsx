@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { href: "#gioi-thieu", label: "Gi���i thiệu" },
+  { href: "#gioi-thieu", label: "Giới thiệu" },
   { href: "#san-pham", label: "Sản phẩm" },
   { href: "#dich-vu", label: "Dịch vụ" },
   { href: "#du-an", label: "Dự án" },
