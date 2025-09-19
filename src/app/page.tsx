@@ -5,6 +5,7 @@ import StatsStrip from "../components/site/StatsStrip";
 import CategoryGrid from "../components/site/CategoryGrid";
 import FeaturesSection from "../components/site/FeaturesSection";
 import ShowcaseSection from "../components/site/ShowcaseSection";
+import BrandsSection from "../components/site/BrandsSection";
 import TestimonialsSection from "../components/site/TestimonialsSection";
 import NewsletterSection from "../components/site/NewsletterSection";
 import ContactSection from "../components/site/ContactSection";
