@@ -31,13 +31,13 @@ export default function Header() {
               </svg>
             </Link>
 
-            <div className="absolute left-0 top-full mt-3 hidden w-72 max-h-[60vh] overflow-auto rounded-lg bg-black/95 border border-white/6 p-3 shadow-2xl backdrop-blur-md group-hover:block group-focus-within:block z-50">
-              <ul className="grid gap-1">
+            <div className="absolute left-0 top-full mt-3 hidden w-72 rounded-lg bg-white text-black border border-black/10 p-3 shadow-2xl group-hover:block group-focus-within:block z-50">
+              <ul className="grid grid-cols-2 gap-1">
                 {[
-                  'Gạch ốp lát','Gương','Vật liệu mặt dựng','Vật liệu ốp trần','Vật liệu ốp tường','Nội thất','Rèm Cửa','Sàn gỗ','Sàn vinyl','Thảm trải sàn','Thiết bị gia dụng','Thiết bị vệ sinh'
+                  'Gạch ốp lát','Gương','Vật liệu mặt dựng','Vật liệu ốp trần','Vật liệu ốp tường','Nội thất','Rèm Cửa','Sàn gỗ','Sàn vinyl','Thảm trải s��n','Thiết bị gia dụng','Thiết bị vệ sinh'
                 ].map((c) => (
                   <li key={c}>
-                    <Link href={`/products?category=${encodeURIComponent(c)}`} className="block rounded px-3 py-2 text-sm text-white hover:bg-white/6">{c}</Link>
+                    <Link href={`/products?category=${encodeURIComponent(c)}`} className="block rounded px-3 py-2 text-[clamp(12px,1.6vmin,15px)] text-black hover:bg-black/5">{c}</Link>
                   </li>
                 ))}
               </ul>
@@ -51,12 +51,12 @@ export default function Header() {
                 <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.06z" />
               </svg>
             </Link>
-            <div className="absolute left-0 top-full mt-3 hidden w-80 max-h-[60vh] overflow-auto rounded-lg bg-black/95 border border-white/6 p-4 shadow-2xl backdrop-blur-md group-hover:block group-focus-within:block z-50">
+            <div className="absolute left-0 top-full mt-3 hidden w-80 rounded-lg bg-white text-black border border-black/10 p-4 shadow-2xl group-hover:block group-focus-within:block z-50">
               <div className="grid grid-cols-2 gap-2">
                 {[
                   'An Cường','Basic','Bosch','Caesar','Đồng Tâm','Kaff','Eurotile','Glasso','WMF','Pare','IVC','Hafele','Happy Home','Viva Home','Inax','Malloca','Moodflor','Super Stone','Viva','Taicera','Tarkett','Thu Hương','Toto','Trenco','Vietceramics','Viglacera','No Brand'
                 ].map((b) => (
-                  <Link key={b} href={`/brands?brand=${encodeURIComponent(b)}`} className="block rounded px-3 py-2 text-sm text-white hover:bg-white/6">{b}</Link>
+                  <Link key={b} href={`/brands?brand=${encodeURIComponent(b)}`} className="block rounded px-3 py-2 text-[clamp(12px,1.6vmin,15px)] text-black hover:bg-black/5">{b}</Link>
                 ))}
               </div>
             </div>
