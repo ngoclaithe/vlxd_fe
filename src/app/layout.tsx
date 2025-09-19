@@ -31,11 +31,28 @@ export default function RootLayout({
       >
         {/* Header */}
         <div className="min-h-dvh grid grid-rows-[auto_1fr_auto]">
-          
+
           <Header />
           <main>{children}</main>
-          
+
           <Footer />
+        </div>
+
+        {/* Floating contact buttons (Messenger, Zalo) */}
+        <div className="floating-contacts" aria-hidden={false}>
+          <a href="https://m.me/novabuild" target="_blank" rel="noopener noreferrer" aria-label="Messenger" className="fc-btn fc-mess">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="block">
+              <path d="M12 2C6.48 2 2 6.03 2 11.05c0 2.98 1.53 5.64 3.96 7.38v3.02l3.45-1.9c.92.25 1.88.38 2.59.38 5.52 0 10-4.03 10-9.05S17.52 2 12 2z" fill="currentColor" />
+              <path d="M10.2 13.2 7 15.5l2.5-4.1 2.5 1.4L17 9l-6.8 4.2z" fill="#fff" />
+            </svg>
+          </a>
+
+          <a href="https://zalo.me/84901234567" target="_blank" rel="noopener noreferrer" aria-label="Zalo" className="fc-btn fc-zalo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="block">
+              <path d="M12 2C6.48 2 2 6.03 2 11.05c0 2.98 1.53 5.64 3.96 7.38v3.02l3.45-1.9c.92.25 1.88.38 2.59.38 5.52 0 10-4.03 10-9.05S17.52 2 12 2z" fill="currentColor" />
+              <path d="M8 9h8v2H8V9zm0 4h5v2H8v-2z" fill="#fff" />
+            </svg>
+          </a>
         </div>
       </body>
     </html>
