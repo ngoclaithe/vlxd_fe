@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
     },
     {
       img: "https://vlxdgiatot.com/wp-content/uploads/2024/01/z5116721828795_784d7877ba3a93e8d6541929482605c11.jpg",
-      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa ch��n đúng đắn cho ngôi nhà của mình.",
+      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa chọn đúng đắn cho ngôi nhà của mình.",
       name: "Anh Tiến",
       location: "Phú Quốc, Kiên Giang",
     },
@@ -42,8 +42,8 @@ export default function TestimonialsSection() {
             <div className="mx-auto mb-4 h-20 w-20 overflow-hidden rounded-full">
               <Image src={t.img} alt={t.name} width={80} height={80} style={{ objectFit: "cover" }} />
             </div>
-            <blockquote className="min-h-[64px] text-sm text-gray-800">"{t.text}"</blockquote>
-            <figcaption className="mt-4 text-xs font-medium text-muted">{t.name} / {t.location}</figcaption>
+            <blockquote className="min-h-[64px] text-sm text-white/90">"{t.text}"</blockquote>
+            <figcaption className="mt-4 text-xs font-medium text-white/80">{t.name} / {t.location}</figcaption>
           </figure>
         ))}
       </div>
