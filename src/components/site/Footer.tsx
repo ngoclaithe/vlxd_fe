@@ -23,7 +23,6 @@ export default function Footer() {
             <li><Link href="#dich-vu" className="hover:underline">Vận chuyển</Link></li>
             <li><Link href="#dich-vu" className="hover:underline">Bảo hành</Link></li>
             <li><Link href="#lien-he" className="hover:underline">Liên hệ</Link></li>
-            <li><Link href="#bao-gia" className="hover:underline">Báo giá</Link></li>
           </ul>
         </div>
         <div className="footer-contact space-y-2 text-sm">
