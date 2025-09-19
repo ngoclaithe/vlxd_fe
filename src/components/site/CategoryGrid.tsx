@@ -65,29 +65,30 @@ export default function CategoryGrid() {
   ];
 
   return (
-    <section id="san-pham" className="category-grid mx-auto max-w-screen-xl px-4 py-16 md:px-6">
-      <div className="mb-8 flex items-end justify-between">
+    <section id="san-pham" className="category-grid mx-auto container-max px-4 py-16 md:px-6">
+      <div className="mb-10 flex items-end justify-between">
         <div>
-          <h2 className="section-title text-2xl font-bold tracking-tight text-gray-900 md:text-3xl dark:text-white">Danh mục nổi bật</h2>
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Chọn nhanh theo nhu cầu công trình của bạn</p>
+          <h2 className="section-title text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Danh mục nổi bật</h2>
+          <p className="mt-2 text-sm text-muted">Chọn nhanh theo nhu cầu công trình của bạn</p>
         </div>
-        <a href="#lien-he" className="hidden rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-black/5 md:inline-flex dark:border-white/10 dark:text-gray-100 dark:hover:bg-white/10">Nhận tư vấn</a>
+        <a href="#lien-he" className="hidden btn-accent md:inline-flex">Nhận tư vấn</a>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {categories.map((c) => (
-          <article key={c.key} className="category-card group relative overflow-hidden rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-white/5">
+          <article key={c.key} className="category-card card group relative overflow-hidden p-6 transition-transform hover:-translate-y-2">
             <div className="flex items-start gap-4">
-              <div className="icon-holder inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10 text-blue-600 group-hover:bg-blue-500/20 dark:text-blue-300">
+              <div className="icon-holder inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white text-accent shadow-sm">
                 {c.icon}
               </div>
-              <div>
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white">{c.name}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{c.desc}</p>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{c.name}</h3>
+                <p className="mt-1 text-sm text-muted">{c.desc}</p>
               </div>
             </div>
-            <div className="mt-4 flex items-center justify-between">
-              <button className="rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2 text-xs font-semibold text-white shadow-sm">Xem sản phẩm</button>
-              <span className="text-xs text-gray-500 dark:text-gray-400">Giao trong 24h</span>
+            <div className="mt-6 flex items-center justify-between">
+              <button className="rounded-full btn-accent px-4 py-2 text-sm">Xem sản phẩm</button>
+              <span className="text-xs text-muted">Giao trong 24h</span>
             </div>
           </article>
         ))}

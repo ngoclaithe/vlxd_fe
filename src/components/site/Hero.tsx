@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Image from "next/image";
 
 const IMAGES = [
   "https://scgvlxd.com/wp-content/themes/yootheme/cache/da/Web-scaled-da610210.webp",
@@ -21,7 +21,9 @@ export default function Hero() {
   return (
     <section className="hero-section relative">
       <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px]">
-        <img src={IMAGES[index]} alt={`Banner ${index + 1}`} className="h-full w-full object-cover transition-transform duration-700" />
+        <div className="relative h-full w-full">
+          <Image src={IMAGES[index]} alt={`Banner ${index + 1}`} fill className="object-cover transition-transform duration-700" priority />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30" />
 
         {/* Controls (minimal) */}
