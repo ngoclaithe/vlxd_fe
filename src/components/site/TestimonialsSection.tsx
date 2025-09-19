@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
     },
     {
       img: "https://vlxdgiatot.com/wp-content/uploads/2024/01/z5116721828795_784d7877ba3a93e8d6541929482605c11.jpg",
-      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa chọn đúng đắn cho ngôi nhà của mình.",
+      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa chọn \u0111\u00FAng \u0111\u00E1ng cho ngôi nhà của mình.",
       name: "Anh Tiến",
       location: "Phú Quốc, Kiên Giang",
     },
