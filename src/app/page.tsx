@@ -51,6 +51,7 @@ export default function Home() {
         </div>
       </section>
       <CategoryGrid />
+      <BrandsSection />
       <FeaturesSection />
       <ShowcaseSection />
       <TestimonialsSection />
