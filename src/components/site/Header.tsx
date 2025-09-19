@@ -22,7 +22,47 @@ export default function Header() {
         <Logo />
 
         <nav className="main-nav hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((l) => (
+          {/* Products dropdown */}
+          <div className="relative group">
+            <Link href="/products" className="nav-link text-sm font-medium tracking-wide text-white/90 hover:text-white inline-flex items-center gap-2">Sản phẩm
+              <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.06z" />
+              </svg>
+            </Link>
+
+            <div className="absolute left-0 top-full mt-3 hidden w-[260px] rounded-lg bg-black/70 p-3 shadow-lg backdrop-blur group-hover:block">
+              <ul className="grid gap-2">
+                {[
+                  'Gạch ốp lát','Gương','Vật liệu mặt dựng','Vật liệu ốp trần','Vật liệu ốp tường','Nội thất','Rèm Cửa','Sàn gỗ','Sàn vinyl','Thảm trải sàn','Thiết bị gia dụng','Thiết bị vệ sinh'
+                ].map((c) => (
+                  <li key={c}>
+                    <Link href={`/products?category=${encodeURIComponent(c)}`} className="block rounded px-3 py-2 text-sm text-white/90 hover:bg-white/6">{c}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Brands dropdown */}
+          <div className="relative group">
+            <Link href="#brands" className="nav-link text-sm font-medium tracking-wide text-white/90 hover:text-white inline-flex items-center gap-2">Thương hiệu
+              <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.06z" />
+              </svg>
+            </Link>
+            <div className="absolute left-0 top-full mt-3 hidden w-[320px] rounded-lg bg-black/70 p-4 shadow-lg backdrop-blur group-hover:block">
+              <div className="grid grid-cols-2 gap-2">
+                {[
+                  'An Cường','Basic','Bosch','Caesar','Đồng Tâm','Kaff','Eurotile','Glasso','WMF','Pare','IVC','Hafele','Happy Home','Viva Home','Inax','Malloca','Moodflor','Super Stone','Viva','Taicera','Tarkett','Thu Hương','Toto','Trenco','Vietceramics','Viglacera','No Brand'
+                ].map((b) => (
+                  <Link key={b} href={`/brands?brand=${encodeURIComponent(b)}`} className="block rounded px-3 py-2 text-sm text-white/90 hover:bg-white/6">{b}</Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Other links */}
+          {NAV_LINKS.filter(l => l.label !== 'Sản phẩm' && l.label !== 'Thương hiệu').map((l) => (
             <Link key={l.href} href={l.href} className="nav-link text-sm font-medium tracking-wide text-white/90 hover:text-white">
               {l.label}
             </Link>
