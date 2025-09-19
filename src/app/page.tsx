@@ -27,23 +27,23 @@ export default function Home() {
               <span className="rounded-full border border-white/10 px-3 py-1 text-white/80">Tư vấn kỹ thuật</span>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-8 dark:border-white/10">
+          <div className="relative overflow-hidden rounded-3xl border border-white/6 bg-transparent p-8">
             <div className="grid grid-cols-2 gap-3 text-center">
-              <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-white/5">
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">2.5K+</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Khách hàng</div>
+              <div className="rounded-2xl bg-white/5 p-6 shadow-sm">
+                <div className="text-2xl font-bold text-white md:text-3xl">2.5K+</div>
+                <div className="text-xs text-white/80">Khách hàng</div>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-white/5">
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">120+</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Đối tác</div>
+              <div className="rounded-2xl bg-white/5 p-6 shadow-sm">
+                <div className="text-2xl font-bold text-white md:text-3xl">120+</div>
+                <div className="text-xs text-white/80">Đối tác</div>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-white/5">
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">98%</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Đúng tiến độ</div>
+              <div className="rounded-2xl bg-white/5 p-6 shadow-sm">
+                <div className="text-2xl font-bold text-white md:text-3xl">98%</div>
+                <div className="text-xs text-white/80">Đúng tiến độ</div>
               </div>
-              <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-white/5">
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">4.9/5</div>
-                <div className="text-xs text-gray-600 dark:text-gray-300">Đánh giá</div>
+              <div className="rounded-2xl bg-white/5 p-6 shadow-sm">
+                <div className="text-2xl font-bold text-white md:text-3xl">4.9/5</div>
+                <div className="text-xs text-white/80">Đánh giá</div>
               </div>
             </div>
           </div>
