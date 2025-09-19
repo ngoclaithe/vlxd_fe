@@ -48,7 +48,7 @@ body {
 }
 
 .btn-accent {
-  background: linear-gradient(90deg, var(--accent), #06b6d4);
+  background: linear-gradient(90deg, var(--accent), #92702a);
   color: white;
   border-radius: 9999px;
   padding: 0.6rem 1rem;
