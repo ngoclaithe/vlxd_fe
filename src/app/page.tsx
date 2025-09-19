@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import Hero from "../components/site/Hero";
 import StatsStrip from "../components/site/StatsStrip";
-import CategoryGrid from "../components/site/CategoryGrid";
 import FeaturesSection from "../components/site/FeaturesSection";
 import ShowcaseSection from "../components/site/ShowcaseSection";
 import BrandsSection from "../components/site/BrandsSection";
@@ -50,7 +49,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <CategoryGrid />
       <BrandsSection />
       <FeaturesSection />
       <ShowcaseSection />
