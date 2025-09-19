@@ -27,12 +27,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30" />
 
 
-        {/* Controls (minimal) */}
-        <div className="absolute left-4 top-4 flex gap-2">
-          <button aria-label="Prev" onClick={() => setIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length)} className="controls rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/30">‹</button>
-          <button aria-label="Next" onClick={() => setIndex((i) => (i + 1) % IMAGES.length)} className="controls rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/30">›</button>
-        </div>
-
         {/* Indicators only, no text or CTAs */}
         <div className="absolute right-4 bottom-4 flex gap-2">
           {IMAGES.map((_, i) => (
