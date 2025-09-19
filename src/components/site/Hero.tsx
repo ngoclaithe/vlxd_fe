@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -25,8 +24,6 @@ export default function Hero() {
         <div className="relative h-full w-full">
           <Image src={IMAGES[index]} alt={`Banner ${index + 1}`} fill className="object-cover transition-transform duration-700" priority />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30" />
-
 
         {/* Indicators only, no text or CTAs */}
         <div className="absolute right-4 bottom-4 flex gap-2">
