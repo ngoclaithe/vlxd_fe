@@ -1,30 +1,51 @@
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Hero() {
-  return (
-    <section className="hero-section relative overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-blue-50 via-white to-white dark:from-blue-950/40 dark:via-black dark:to-black" />
-      <div aria-hidden className="absolute -left-10 -top-24 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
-      <div aria-hidden className="absolute -right-10 top-40 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+const IMAGES = [
+  "https://scgvlxd.com/wp-content/themes/yootheme/cache/da/Web-scaled-da610210.webp",
+  "https://scgvlxd.com/wp-content/themes/yootheme/cache/62/Banner-Website.-1-62f7d0bd.webp",
+  "https://scgvlxd.com/wp-content/uploads/2025/08/xem-ngay-1.png",
+  "https://scgvlxd.com/wp-content/themes/yootheme/cache/26/web-055518da-2626e5e6.webp",
+  "https://scgvlxd.com/wp-content/themes/yootheme/cache/67/banner-website-scg-1440-x-550-px-676d54ca.webp",
+];
 
-      <div className="mx-auto max-w-screen-xl px-4 py-20 text-center md:px-6 md:py-28">
-        <span className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/60 px-3 py-1 text-xs font-medium text-blue-700 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-blue-300">
-          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M12 2l2.09 6.26H20l-5.17 3.76L16.18 18 12 14.78 7.82 18l1.35-5.98L4 8.26h5.91L12 2z"/></svg>
-          Nhà cung cấp VLXD uy tín
-        </span>
-        <h1 className="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight text-gray-900 md:text-5xl dark:text-white">
-          Vật liệu xây dựng chất lượng cho mọi công trình
-        </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-pretty text-base text-gray-600 md:text-lg dark:text-gray-300">
-          Từ xi măng, thép, gạch đến sơn và thiết bị hoàn thiện – tất cả đều có tại NovaBuild với giá cạnh tranh, giao nhanh và tư vấn tận tâm.
-        </p>
-        <div className="mt-8 flex items-center justify-center gap-3">
-          <Link href="#san-pham" className="primary-cta inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-95">
-            Khám phá sản phẩm
-          </Link>
-          <Link href="#lien-he" className="secondary-cta inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-800 hover:bg-black/5 dark:border-white/10 dark:bg-transparent dark:text-gray-100 dark:hover:bg-white/10">
-            Liên hệ báo giá
-          </Link>
+export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setIndex((i) => (i + 1) % IMAGES.length), 6000);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <section className="hero-section relative">
+      <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px]">
+        <img src={IMAGES[index]} alt={`Banner ${index + 1}`} className="h-full w-full object-cover transition-transform duration-700" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
+        <div className="absolute left-4 top-4 flex gap-2">
+          <button aria-label="Prev" onClick={() => setIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length)} className="controls rounded-full bg-white/30 p-2 text-white backdrop-blur hover:bg-white/40">
+            ‹
+          </button>
+          <button aria-label="Next" onClick={() => setIndex((i) => (i + 1) % IMAGES.length)} className="controls rounded-full bg-white/30 p-2 text-white backdrop-blur hover:bg-white/40">
+            ›
+          </button>
+        </div>
+        <div className="absolute left-1/2 top-1/2 w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 px-4 text-center text-white">
+          <div className="mx-auto mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
+            Nhà cung cấp VLXD uy tín
+          </div>
+          <h2 className="mx-auto max-w-3xl text-2xl font-semibold tracking-tight md:text-3xl">NovaBuild — Vật liệu xây dựng cho mọi công trình</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-sm opacity-90 md:text-base">Xi măng, thép, gạch, sơn và thiết bị hoàn thiện. Giá tốt, giao nhanh, tư vấn tận tâm.</p>
+          <div className="mt-6 flex items-center justify-center gap-3">
+            <Link href="#san-pham" className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 text-sm font-semibold text-white shadow-sm">Khám phá sản phẩm</Link>
+            <Link href="#lien-he" className="inline-flex items-center rounded-full border border-white/20 bg-black/30 px-5 py-3 text-sm font-semibold text-white">Liên hệ báo giá</Link>
+          </div>
+        </div>
+        <div className="absolute left-1/2 bottom-4 flex -translate-x-1/2 gap-2">
+          {IMAGES.map((_, i) => (
+            <button key={i} onClick={() => setIndex(i)} aria-label={`Slide ${i + 1}`} className={`h-2 w-8 rounded-full transition-all ${i === index ? "bg-white" : "bg-white/40"}`} />
+          ))}
         </div>
       </div>
     </section>
