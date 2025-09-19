@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="site-footer border-t border-white/10 bg-gray-50 text-gray-700 dark:bg-black dark:text-gray-200">
+    <footer className="site-footer border-t border-white/10 bg-transparent text-white">
       <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-10 px-4 py-12 md:grid-cols-4 md:px-6">
         <div className="footer-brand space-y-3">
           <div className="text-xl font-semibold">VLXD NovaBuild</div>
