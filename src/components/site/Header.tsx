@@ -29,8 +29,6 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="#lien-he" className="cta-quote btn-accent hidden md:inline-flex">Báo giá</Link>
-
         <button aria-label="Mở menu" className="menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-lg border border-transparent bg-white/5 text-white md:hidden" onClick={() => setOpen((s) => !s)}>
           <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             {open ? (
@@ -54,9 +52,6 @@ export default function Header() {
                 {l.label}
               </Link>
             ))}
-            <Link href="#lien-he" className="cta-quote btn-accent mt-2 inline-flex items-center justify-center" onClick={() => setOpen(false)}>
-              Báo giá
-            </Link>
           </div>
         </div>
       )}
