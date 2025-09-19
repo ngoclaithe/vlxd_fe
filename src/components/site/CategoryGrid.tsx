@@ -1,8 +1,11 @@
-type Category = { key: string; name: string; desc: string; icon: JSX.Element };
-
 import React from 'react';
 
-interface Category { key: string; name: string; desc: string; icon: React.ReactNode }
+interface Category { 
+  key: string; 
+  name: string; 
+  desc: string; 
+  icon: React.ReactNode; 
+}
 
 function CementIcon() {
   return (
@@ -13,6 +16,7 @@ function CementIcon() {
     </svg>
   );
 }
+
 function SteelIcon() {
   return (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -22,6 +26,7 @@ function SteelIcon() {
     </svg>
   );
 }
+
 function BrickIcon() {
   return (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -30,6 +35,7 @@ function BrickIcon() {
     </svg>
   );
 }
+
 function SandStoneIcon() {
   return (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -38,6 +44,7 @@ function SandStoneIcon() {
     </svg>
   );
 }
+
 function PaintIcon() {
   return (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -48,6 +55,7 @@ function PaintIcon() {
     </svg>
   );
 }
+
 function SanitaryIcon() {
   return (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
