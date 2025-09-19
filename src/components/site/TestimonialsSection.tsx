@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
     },
     {
       img: "https://vlxdgiatot.com/wp-content/uploads/2024/01/z5116721828795_784d7877ba3a93e8d6541929482605c11.jpg",
-      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa chọn đúng đắn cho ngôi nhà của mình.",
+      text: "Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa ch��n đúng đắn cho ngôi nhà của mình.",
       name: "Anh Tiến",
       location: "Phú Quốc, Kiên Giang",
     },
@@ -33,8 +33,8 @@ export default function TestimonialsSection() {
   return (
     <section className="testimonials-section mx-auto container-max px-4 py-16 md:px-6">
       <div className="mb-8 text-center">
-        <h2 className="section-title text-3xl font-bold tracking-tight text-gray-900 md:text-3xl dark:text-white">Khách hàng nói gì?</h2>
-        <p className="mt-2 text-sm text-muted">Niềm tin của khách hàng là động lực phát triển của NovaBuild</p>
+        <h2 className="section-title text-3xl font-bold tracking-tight text-white md:text-3xl">Khách hàng nói gì?</h2>
+        <p className="mt-2 text-sm text-white/80">Niềm tin của khách hàng là động lực phát triển của NovaBuild</p>
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {items.map((t, idx) => (
