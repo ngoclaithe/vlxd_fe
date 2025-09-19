@@ -87,7 +87,28 @@ export default function Header() {
       {open && (
         <div className="mobile-menu absolute left-0 right-0 top-full z-40 px-4 pb-4 pt-2 md:hidden">
           <div className="flex flex-col gap-3">
-            {NAV_LINKS.map((l) => (
+            <div>
+              <div className="font-medium text-white/90 px-3 py-2">Sản phẩm</div>
+              <div className="grid gap-1 px-2">
+                {[
+                  'Gạch ốp lát','Gương','Vật liệu mặt dựng','Vật liệu ốp trần','Vật liệu ốp tường','Nội thất','Rèm Cửa','Sàn gỗ','Sàn vinyl','Thảm trải sàn','Thiết bị gia dụng','Thiết bị vệ sinh'
+                ].map((c) => (
+                  <Link key={c} href={`/products?category=${encodeURIComponent(c)}`} className="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/6" onClick={() => setOpen(false)}>{c}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="font-medium text-white/90 px-3 py-2">Thương hiệu</div>
+              <div className="grid gap-1 px-2">
+                {[
+                  'An Cường','Basic','Bosch','Caesar','Đồng Tâm','Kaff','Eurotile','Glasso','WMF','Pare','IVC','Hafele','Happy Home','Viva Home','Inax','Malloca','Moodflor','Super Stone','Viva','Taicera','Tarkett','Thu Hương','Toto','Trenco','Vietceramics','Viglacera','No Brand'
+                ].map((b) => (
+                  <Link key={b} href={`/brands?brand=${encodeURIComponent(b)}`} className="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/6" onClick={() => setOpen(false)}>{b}</Link>
+                ))}
+              </div>
+            </div>
+
+            {NAV_LINKS.filter(l => l.label !== 'Sản phẩm' && l.label !== 'Thương hiệu').map((l) => (
               <Link key={l.href} href={l.href} className="nav-link block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/6" onClick={() => setOpen(false)}>
                 {l.label}
               </Link>
