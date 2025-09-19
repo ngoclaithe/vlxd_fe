@@ -31,10 +31,10 @@ export default function RootLayout({
       >
         {/* Header */}
         <div className="min-h-dvh grid grid-rows-[auto_1fr_auto]">
-          {/* @ts-expect-error Server Component boundary */}
+          
           <Header />
           <main>{children}</main>
-          {/* @ts-expect-error Server Component boundary */}
+          
           <Footer />
         </div>
       </body>
