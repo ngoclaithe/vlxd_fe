@@ -68,8 +68,8 @@ export default function CategoryGrid() {
     <section id="san-pham" className="category-grid mx-auto container-max px-4 py-16 md:px-6">
       <div className="mb-10 flex items-end justify-between">
         <div>
-          <h2 className="section-title text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Danh mục nổi bật</h2>
-          <p className="mt-2 text-sm text-muted">Chọn nhanh theo nhu cầu công trình của bạn</p>
+          <h2 className="section-title text-3xl font-bold tracking-tight text-white">Danh mục nổi bật</h2>
+          <p className="mt-2 text-sm text-white/80">Chọn nhanh theo nhu cầu công trình của bạn</p>
         </div>
         <a href="#lien-he" className="hidden btn-accent md:inline-flex">Nhận tư vấn</a>
       </div>
@@ -78,17 +78,17 @@ export default function CategoryGrid() {
         {categories.map((c) => (
           <article key={c.key} className="category-card card group relative overflow-hidden p-6 transition-transform hover:-translate-y-2">
             <div className="flex items-start gap-4">
-              <div className="icon-holder inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white text-accent shadow-sm">
+              <div className="icon-holder inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/5 text-white shadow-sm">
                 {c.icon}
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{c.name}</h3>
-                <p className="mt-1 text-sm text-muted">{c.desc}</p>
+                <h3 className="text-lg font-semibold text-white">{c.name}</h3>
+                <p className="mt-1 text-sm text-white/80">{c.desc}</p>
               </div>
             </div>
             <div className="mt-6 flex items-center justify-between">
               <button className="rounded-full btn-accent px-4 py-2 text-sm">Xem sản phẩm</button>
-              <span className="text-xs text-muted">Giao trong 24h</span>
+              <span className="text-xs text-white/80">Giao trong 24h</span>
             </div>
           </article>
         ))}

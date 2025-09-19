@@ -33,8 +33,8 @@ export default function TestimonialsSection() {
   return (
     <section className="testimonials-section mx-auto container-max px-4 py-16 md:px-6">
       <div className="mb-8 text-center">
-        <h2 className="section-title text-3xl font-bold tracking-tight text-gray-900 md:text-3xl dark:text-white">Khách hàng nói gì?</h2>
-        <p className="mt-2 text-sm text-muted">Niềm tin của khách hàng là động lực phát triển của NovaBuild</p>
+        <h2 className="section-title text-3xl font-bold tracking-tight text-white md:text-3xl">Khách hàng nói gì?</h2>
+        <p className="mt-2 text-sm text-white/80">Niềm tin của khách hàng là động lực phát triển của NovaBuild</p>
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {items.map((t, idx) => (
@@ -42,8 +42,8 @@ export default function TestimonialsSection() {
             <div className="mx-auto mb-4 h-20 w-20 overflow-hidden rounded-full">
               <Image src={t.img} alt={t.name} width={80} height={80} style={{ objectFit: "cover" }} />
             </div>
-            <blockquote className="min-h-[64px] text-sm text-gray-800">"{t.text}"</blockquote>
-            <figcaption className="mt-4 text-xs font-medium text-muted">{t.name} / {t.location}</figcaption>
+            <blockquote className="min-h-[64px] text-sm text-white/90">"{t.text}"</blockquote>
+            <figcaption className="mt-4 text-xs font-medium text-white/80">{t.name} / {t.location}</figcaption>
           </figure>
         ))}
       </div>

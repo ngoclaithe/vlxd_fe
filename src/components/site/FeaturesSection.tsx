@@ -34,17 +34,17 @@ export default function FeaturesSection() {
   return (
     <section id="dich-vu" className="features-section mx-auto container-max px-4 py-16 md:px-6">
       <div className="mb-8 text-center">
-        <h2 className="section-title text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Dịch vụ nổi bật</h2>
-        <p className="mt-2 text-sm text-muted">Cam kết chất lượng dịch vụ đồng đều như sản phẩm</p>
+        <h2 className="section-title text-3xl font-bold tracking-tight text-white">Dịch vụ nổi bật</h2>
+        <p className="mt-2 text-sm text-white/80">Cam kết chất lượng dịch vụ đồng đều như sản phẩm</p>
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {features.map((f) => (
           <div key={f.title} className="feature-card card p-6 text-center">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-[#e6fffb] to-white text-accent shadow-sm">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-[#08323a] to-[#045d6b] text-white shadow-sm">
               {f.icon}
             </div>
-            <div className="text-lg font-semibold text-gray-900 dark:text-white">{f.title}</div>
-            <p className="mt-2 text-sm text-muted">{f.desc}</p>
+            <div className="text-lg font-semibold text-white">{f.title}</div>
+            <p className="mt-2 text-sm text-white/80">{f.desc}</p>
           </div>
         ))}
       </div>
