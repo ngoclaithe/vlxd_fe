@@ -18,13 +18,13 @@ export default function Home() {
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>
             <h2 className="section-title text-2xl font-bold tracking-tight text-gray-900 md:text-3xl dark:text-white">Về NovaBuild</h2>
-            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
+            <p className="mt-3 text-sm text-white/80">
               NovaBuild là đơn vị cung cấp vật liệu xây dựng với hơn 10 năm kinh nghiệm, hệ thống kho bãi rộng khắp và đội ngũ tư vấn kỹ thuật tận tâm. Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chính hãng, mức giá cạnh tranh cùng dịch vụ giao hàng nhanh, đồng hành suốt vòng đời công trình.
             </p>
             <div className="mt-4 flex flex-wrap gap-2 text-xs">
-              <span className="rounded-full border border-black/10 px-3 py-1 dark:border-white/10">CO/CQ đầy đủ</span>
-              <span className="rounded-full border border-black/10 px-3 py-1 dark:border-white/10">Giá tốt theo số lượng</span>
-              <span className="rounded-full border border-black/10 px-3 py-1 dark:border-white/10">Tư vấn kỹ thuật</span>
+              <span className="rounded-full border border-white/10 px-3 py-1 text-white/80">CO/CQ đầy đủ</span>
+              <span className="rounded-full border border-white/10 px-3 py-1 text-white/80">Giá tốt theo số lượng</span>
+              <span className="rounded-full border border-white/10 px-3 py-1 text-white/80">Tư vấn kỹ thuật</span>
             </div>
           </div>
           <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-8 dark:border-white/10">

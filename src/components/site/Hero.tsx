@@ -26,6 +26,17 @@ export default function Hero() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30" />
 
+        <div className="absolute inset-0 flex items-center justify-center px-4">
+          <div className="text-center max-w-2xl">
+            <h1 className="text-3xl md:text-4xl font-bold text-white">Vật liệu xây dựng chất lượng cho mọi công trình</h1>
+            <p className="mt-3 text-sm text-white/80">Sản phẩm chính hãng, giao nhanh, tư vấn kỹ thuật chuyên nghiệp.</p>
+            <div className="mt-6 flex items-center justify-center gap-3">
+              <a href="#san-pham" className="btn-accent inline-flex px-4 py-2">Xem sản phẩm</a>
+              <a href="#lien-he" className="rounded-md border border-white/10 px-4 py-2 text-white">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+
         {/* Controls (minimal) */}
         <div className="absolute left-4 top-4 flex gap-2">
           <button aria-label="Prev" onClick={() => setIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length)} className="controls rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/30">‹</button>
