@@ -17,7 +17,7 @@ export default function Home() {
       <section id="gioi-thieu" className="about-section mx-auto max-w-screen-xl px-4 py-16 md:px-6">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>
-            <h2 className="section-title text-2xl font-bold tracking-tight text-gray-900 md:text-3xl dark:text-white">Về NovaBuild</h2>
+            <h2 className="section-title text-2xl font-bold tracking-tight text-white md:text-3xl">Về NovaBuild</h2>
             <p className="mt-3 text-sm text-white/80">
               NovaBuild là đơn vị cung cấp vật liệu xây dựng với hơn 10 năm kinh nghiệm, hệ thống kho bãi rộng khắp và đội ngũ tư vấn kỹ thuật tận tâm. Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chính hãng, mức giá cạnh tranh cùng dịch vụ giao hàng nhanh, đồng hành suốt vòng đời công trình.
             </p>
