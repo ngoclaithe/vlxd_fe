@@ -27,7 +27,7 @@ function HeadsetIcon() {
 
 export default function FeaturesSection() {
   const features = [
-    { title: "Vận chuyển toàn quốc", desc: "Đội xe chuyên nghiệp, giao nhanh đúng tiến độ.", icon: <TruckIcon /> },
+    { title: "Vận chuyển toàn quốc", desc: "\u0110ội xe chuyên nghiệp, giao nhanh \u0111\u00fang tiến \u0111\u1ED9.", icon: <TruckIcon /> },
     { title: "Bảo hành & chứng nhận", desc: "Hàng chính hãng, CO/CQ đầy đủ, đổi trả linh hoạt.", icon: <ShieldIcon /> },
     { title: "Tư vấn kỹ thuật 24/7", desc: "Đội ngũ kỹ sư sẵn sàng đồng hành cùng công trình.", icon: <HeadsetIcon /> },
   ];
