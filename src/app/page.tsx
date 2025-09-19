@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Hero from "../components/site/Hero";
 import StatsStrip from "../components/site/StatsStrip";
 import FeaturesSection from "../components/site/FeaturesSection";
