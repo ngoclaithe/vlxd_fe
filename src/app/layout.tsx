@@ -49,9 +49,9 @@ export default function RootLayout({
           </a>
 
           <a href="https://zalo.me/84901234567" target="_blank" rel="noopener noreferrer" aria-label="Zalo" className="fc-btn fc-zalo">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="block">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden className="block">
               <path d="M12 2C6.48 2 2 6.03 2 11.05c0 2.98 1.53 5.64 3.96 7.38v3.02l3.45-1.9c.92.25 1.88.38 2.59.38 5.52 0 10-4.03 10-9.05S17.52 2 12 2z" fill="currentColor" />
-              <path d="M7.5 7.5h9L12 16l-4.5-8.5z" fill="#fff" />
+              <path d="M8 7h8L12 15l-4-8z" fill="#fff" />
             </svg>
           </a>
         </div>
