@@ -85,7 +85,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="mobile-menu absolute left-0 right-0 top-full z-40 px-4 pb-4 pt-2 md:hidden">
+        <div className="mobile-menu absolute left-0 right-0 top-full z-50 px-4 pb-4 pt-2 md:hidden bg-black/95 backdrop-blur-md rounded-b-lg">
           <div className="flex flex-col gap-3">
             <div>
               <div className="font-medium text-white/90 px-3 py-2">Sản phẩm</div>
