@@ -6,12 +6,12 @@ export default function StatsStrip() {
     { value: "99%", label: "Khách hàng hài lòng" },
   ];
   return (
-    <section className="stats-strip border-y border-white/10 bg-gray-50/60 dark:bg-white/5">
+    <section className="stats-strip border-y border-white/10 bg-transparent">
       <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 px-4 py-8 sm:grid-cols-4 md:px-6">
         {stats.map((s) => (
           <div key={s.label} className="stat-item text-center">
-            <div className="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">{s.value}</div>
-            <div className="text-xs font-medium text-gray-600 dark:text-gray-300">{s.label}</div>
+            <div className="text-2xl font-bold text-white md:text-3xl">{s.value}</div>
+            <div className="text-xs font-medium text-white/80">{s.label}</div>
           </div>
         ))}
       </div>
