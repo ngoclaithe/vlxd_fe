@@ -18,7 +18,7 @@ export default function ShowcaseSection() {
               <span className="tag inline-flex items-center rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-white/90">{p.tag}</span>
               <span className="text-xs text-muted">Hoàn thành</span>
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">{p.name}</h3>
+            <h3 className="mt-4 text-lg font-semibold text-white">{p.name}</h3>
             <p className="mt-2 text-sm text-white/80">{p.desc}</p>
           </article>
         ))}
